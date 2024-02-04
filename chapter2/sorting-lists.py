@@ -1,0 +1,22 @@
+countrys = ['USA', 'Bulgaria', 'Egypt', 'Norway', 'Sweden']
+countrys.sort()
+print(countrys)
+countrys.sort(reverse=True)
+print(countrys)
+print(sorted(countrys))
+countrys.pop(0)
+print(countrys)
+countrys.append('USA')
+print(countrys)
+countrys.insert(0, 'Russia')
+print(countrys)
+del countrys[-1]
+print(countrys)
+countrys.reverse()
+print(countrys)
+countrys.remove('Egypt')
+print(countrys)
+countrys[0] = 'Russia'
+print(countrys)
+print(countrys[-1])
+print(f"Количество стран в списке: {len(countrys)}")
