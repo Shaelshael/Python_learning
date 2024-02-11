@@ -7,7 +7,7 @@ print('Мои любимые пиццы:')
 print(pizza)
 print('\nЛюбимые пиццы моего друга:')
 print(friends_pizzas)
-
+# 4.2
 for pizzas in pizza:
     print(f'\n"{pizzas.title()}" стоит своих денег')
     print('Хотя, конечно, могла бы стоить и поменьше.')
