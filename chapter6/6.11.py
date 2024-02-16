@@ -21,5 +21,5 @@ for city, city_info in cities.items():
     population = city_info['population']
     fact = city_info['fact']
     print(f'Located in {location.title()}.')
-    print(f'Population is about {population}.')
+    print(f'Population of this city is {population}.')
     print(fact)
