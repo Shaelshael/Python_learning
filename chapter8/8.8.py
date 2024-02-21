@@ -3,7 +3,7 @@ def make_album(musician, album, songs=''):
     """формирует словарь из заданных данных"""
     album_definition = {'name': musician.title(), 'title': album.title()}
     if songs:
-        album_definition['songs'] = int(songs)
+        album_definition['songs'] = songs
     return album_definition
 
 
@@ -22,10 +22,6 @@ while True:
     song_amount = input("Amount of songs in album (optional): ")
     if song_amount == 'quit':
         break
-    elif song_amount is None:
-        song_amount = ''
 
     message = f'\n{make_album(musician_name, album_name, song_amount)}'
     print(message)
-
-# спросить, правильно ли сделан elif вариант для пустого аргумента в параметре или лучше сделать как-то иначе
