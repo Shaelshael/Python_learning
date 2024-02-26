@@ -3,6 +3,7 @@ class User():
     """модель пользователя и методы для приветствия и вывода информации о нем"""
 
     def __init__(self, first_name, last_name, age, birth_place):
+        """инициализирует атрибуты описания пользователя"""
         self.first_name = first_name
         self.last_name = last_name
         self.full_name = f'{first_name} {last_name}'
@@ -10,11 +11,13 @@ class User():
         self.birth_place = birth_place
 
     def describe_user(self):
+        """выводит отформатированное описание пользователя"""
         print(f"User's full name: {self.full_name.title()}")
         print(f"User's age: {self.age}")
         print(f"User's place of birth: {self.birth_place.title()}")
 
     def greet_user(self):
+        """приветствует пользователя по полному имени"""
         print(f'Hallo, {self.full_name.title()}! Welcome.')
 
 
