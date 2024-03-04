@@ -1,7 +1,10 @@
 # функция с одним аргументом по умолчанию
 def describe_city(name, country='usa'):
     """вывод сообщения со страной, в которой находится город"""
-    print(f'{name.title()} is in {country.title()}.')
+    if country == 'usa':
+        print(f'{name.title()} is in {country.upper()}.')
+    else:
+        print(f'{name.title()} is in {country.title()}.')
 
 
 # в техасе есть москва
