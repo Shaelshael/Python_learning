@@ -1,0 +1,3 @@
+In Python you can use functions.
+In Python you can save data in lists.
+In Python you can save data in dictionaries as lists.
